@@ -1,0 +1,18 @@
+.header {
+  text-align: center;
+}
+
+.wrapper-square {
+  display: grid;
+  margin-left: calc(50vw - 150px);
+}
+
+.row {
+  display: flex;
+}
+
+.pole {
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
+}
