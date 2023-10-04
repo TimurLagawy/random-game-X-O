@@ -19,6 +19,7 @@ pole1.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole2.addEventListener("click", () => {
   if (pole2.innerHTML == "") {
@@ -30,6 +31,7 @@ pole2.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole3.addEventListener("click", () => {
   if (pole3.innerHTML == "") {
@@ -41,6 +43,7 @@ pole3.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole4.addEventListener("click", () => {
   if (pole4.innerHTML == "") {
@@ -52,6 +55,7 @@ pole4.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole5.addEventListener("click", () => {
   if (pole5.innerHTML == "") {
@@ -63,6 +67,7 @@ pole5.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole6.addEventListener("click", () => {
   if (pole6.innerHTML == "") {
@@ -74,6 +79,7 @@ pole6.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole7.addEventListener("click", () => {
   if (pole7.innerHTML == "") {
@@ -85,6 +91,7 @@ pole7.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole8.addEventListener("click", () => {
   if (pole8.innerHTML == "") {
@@ -96,6 +103,7 @@ pole8.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
 pole9.addEventListener("click", () => {
   if (pole9.innerHTML == "") {
@@ -107,4 +115,102 @@ pole9.addEventListener("click", () => {
     count++;
   } else {
   }
+  checkOfWinner();
 });
+
+function checkOfWinner() {
+  if (
+    pole1.innerHTML == "O" &&
+    pole2.innerHTML == "O" &&
+    pole3.innerHTML == "O"
+  ) {
+    alert("O - is winner!");
+    location.reload();
+  } else if (
+    pole4.innerHTML == "O" &&
+    pole5.innerHTML == "O" &&
+    pole6.innerHTML == "O"
+  ) {
+    alert("O - is winner!");location.reload();
+  } else if (
+    pole7.innerHTML == "O" &&
+    pole8.innerHTML == "O" &&
+    pole9.innerHTML == "O"
+  ) {
+    alert("O - is winner!");location.reload();
+  } else if (
+    pole1.innerHTML == "O" &&
+    pole5.innerHTML == "O" &&
+    pole9.innerHTML == "O"
+  ) {
+    alert("O - is winner!");
+  } else if (
+    pole1.innerHTML == "O" &&
+    pole4.innerHTML == "O" &&
+    pole7.innerHTML == "O"
+  ) {
+    alert("O - is winner!");
+  } else if (
+    pole2.innerHTML == "O" &&
+    pole5.innerHTML == "O" &&
+    pole8.innerHTML == "O"
+  ) {
+    alert("O - is winner!");
+  } else if (
+    pole3.innerHTML == "O" &&
+    pole6.innerHTML == "O" &&
+    pole9.innerHTML == "O"
+  ) {
+    alert("O - is winner!");
+  } else if (
+    pole1.innerHTML == "X" &&
+    pole2.innerHTML == "X" &&
+    pole3.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole4.innerHTML == "X" &&
+    pole5.innerHTML == "X" &&
+    pole6.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole7.innerHTML == "X" &&
+    pole8.innerHTML == "X" &&
+    pole9.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole1.innerHTML == "X" &&
+    pole5.innerHTML == "X" &&
+    pole9.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole3.innerHTML == "X" &&
+    pole5.innerHTML == "X" &&
+    pole7.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole1.innerHTML == "X" &&
+    pole4.innerHTML == "X" &&
+    pole7.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole2.innerHTML == "X" &&
+    pole5.innerHTML == "X" &&
+    pole8.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (
+    pole3.innerHTML == "X" &&
+    pole6.innerHTML == "X" &&
+    pole9.innerHTML == "X"
+  ) {
+    alert("X - is winner!");
+  } else if (count == 8) {
+    alert("NO WINNER!");
+  }
+}
