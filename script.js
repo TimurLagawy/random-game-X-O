@@ -8,6 +8,9 @@ let pole7 = document.querySelector("#pole7");
 let pole8 = document.querySelector("#pole8");
 let pole9 = document.querySelector("#pole9");
 let count = 0;
+let countX = 0;
+let countO = 0;
+let countNo = 0;
 
 pole1.addEventListener("click", () => {
   if (pole1.innerHTML == "") {
@@ -125,6 +128,8 @@ function checkOfWinner() {
     pole3.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole4.innerHTML == "O" &&
@@ -132,6 +137,8 @@ function checkOfWinner() {
     pole6.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole7.innerHTML == "O" &&
@@ -139,6 +146,8 @@ function checkOfWinner() {
     pole9.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole1.innerHTML == "O" &&
@@ -146,6 +155,17 @@ function checkOfWinner() {
     pole9.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
+    location.reload();
+  } else if (
+    pole7.innerHTML == "O" &&
+    pole5.innerHTML == "O" &&
+    pole3.innerHTML == "O"
+  ) {
+    alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole1.innerHTML == "O" &&
@@ -153,6 +173,8 @@ function checkOfWinner() {
     pole7.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole2.innerHTML == "O" &&
@@ -160,6 +182,8 @@ function checkOfWinner() {
     pole8.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole3.innerHTML == "O" &&
@@ -167,6 +191,8 @@ function checkOfWinner() {
     pole9.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    countO = localStorage.getItem("O");
+    localStorage.setItem("O", +countO + 1);
     location.reload();
   } else if (
     pole1.innerHTML == "X" &&
@@ -174,6 +200,8 @@ function checkOfWinner() {
     pole3.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole4.innerHTML == "X" &&
@@ -181,6 +209,8 @@ function checkOfWinner() {
     pole6.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole7.innerHTML == "X" &&
@@ -188,6 +218,8 @@ function checkOfWinner() {
     pole9.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole1.innerHTML == "X" &&
@@ -195,6 +227,8 @@ function checkOfWinner() {
     pole9.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole3.innerHTML == "X" &&
@@ -202,6 +236,8 @@ function checkOfWinner() {
     pole7.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole1.innerHTML == "X" &&
@@ -209,6 +245,8 @@ function checkOfWinner() {
     pole7.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole2.innerHTML == "X" &&
@@ -216,6 +254,8 @@ function checkOfWinner() {
     pole8.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (
     pole3.innerHTML == "X" &&
@@ -223,9 +263,13 @@ function checkOfWinner() {
     pole9.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    countX = localStorage.getItem("X");
+    localStorage.setItem("X", +countX + 1);
     location.reload();
   } else if (count == 8) {
     alert("NO WINNER!");
+    countNo = localStorage.getItem("No");
+    localStorage.setItem("No", +countNo + 1);
     location.reload();
   }
 }
