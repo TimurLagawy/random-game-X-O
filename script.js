@@ -131,86 +131,101 @@ function checkOfWinner() {
     pole5.innerHTML == "O" &&
     pole6.innerHTML == "O"
   ) {
-    alert("O - is winner!");location.reload();
+    alert("O - is winner!");
+    location.reload();
   } else if (
     pole7.innerHTML == "O" &&
     pole8.innerHTML == "O" &&
     pole9.innerHTML == "O"
   ) {
-    alert("O - is winner!");location.reload();
+    alert("O - is winner!");
+    location.reload();
   } else if (
     pole1.innerHTML == "O" &&
     pole5.innerHTML == "O" &&
     pole9.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    location.reload();
   } else if (
     pole1.innerHTML == "O" &&
     pole4.innerHTML == "O" &&
     pole7.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    location.reload();
   } else if (
     pole2.innerHTML == "O" &&
     pole5.innerHTML == "O" &&
     pole8.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    location.reload();
   } else if (
     pole3.innerHTML == "O" &&
     pole6.innerHTML == "O" &&
     pole9.innerHTML == "O"
   ) {
     alert("O - is winner!");
+    location.reload();
   } else if (
     pole1.innerHTML == "X" &&
     pole2.innerHTML == "X" &&
     pole3.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole4.innerHTML == "X" &&
     pole5.innerHTML == "X" &&
     pole6.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole7.innerHTML == "X" &&
     pole8.innerHTML == "X" &&
     pole9.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole1.innerHTML == "X" &&
     pole5.innerHTML == "X" &&
     pole9.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole3.innerHTML == "X" &&
     pole5.innerHTML == "X" &&
     pole7.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole1.innerHTML == "X" &&
     pole4.innerHTML == "X" &&
     pole7.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole2.innerHTML == "X" &&
     pole5.innerHTML == "X" &&
     pole8.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (
     pole3.innerHTML == "X" &&
     pole6.innerHTML == "X" &&
     pole9.innerHTML == "X"
   ) {
     alert("X - is winner!");
+    location.reload();
   } else if (count == 8) {
     alert("NO WINNER!");
+    location.reload();
   }
 }
