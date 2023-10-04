@@ -11,6 +11,29 @@ let count = 0;
 let countX = 0;
 let countO = 0;
 let countNo = 0;
+let resultsX = document.querySelector("#results-x");
+let resultsO = document.querySelector("#results-o");
+let resultsNo = document.querySelector("#results-no");
+
+actualResult();
+
+function actualResult() {
+  if (localStorage.getItem("X") == undefined) {
+    resultsX.innerHTML = 0;
+  } else {
+    resultsX.innerHTML = localStorage.getItem("X");
+  }
+  if (localStorage.getItem("O") == undefined) {
+    resultsO.innerHTML = 0;
+  } else {
+    resultsO.innerHTML = localStorage.getItem("O");
+  }
+  if (localStorage.getItem("No") == undefined) {
+    resultsNo.innerHTML = 0;
+  } else {
+    resultsNo.innerHTML = localStorage.getItem("No");
+  }
+}
 
 pole1.addEventListener("click", () => {
   if (pole1.innerHTML == "") {
@@ -266,7 +289,7 @@ function checkOfWinner() {
     countX = localStorage.getItem("X");
     localStorage.setItem("X", +countX + 1);
     location.reload();
-  } else if (count == 8) {
+  } else if (count == 9) {
     alert("NO WINNER!");
     countNo = localStorage.getItem("No");
     localStorage.setItem("No", +countNo + 1);

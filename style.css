@@ -11,13 +11,27 @@
   display: flex;
 }
 
+.rules {
+  position: absolute;
+  width: 100px;
+  top: 70px;
+  left: calc(50vw - 300px);
+}
+
 .pole {
   height: 100px;
   width: 100px;
   border: solid black 1px;
   cursor: pointer;
   text-align: center;
-  font-size: 60px;
+  font-size: 70px;
+}
+
+.results {
+  position: absolute;
+  display: grid;
+  top: 80px;
+  right: calc(50vw - 300px);
 }
 
 .space {
@@ -39,4 +53,9 @@
   background-size: auto 100%;
   width: 300px;
   height: 100px;
+}
+@media (max-width: 600px) {
+  .rules {
+    left: calc(50vw - 250px);
+  }
 }
