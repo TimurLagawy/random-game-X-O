@@ -308,7 +308,7 @@ function checkOfWinner() {
 }
 
 function getWinner() {
-  if (localStorage.getItem("X") == 10) {
+  if (localStorage.getItem("X") >= 10) {
     winnerButton.classList.add("open");
     winnerCongrats.classList.add("open");
     black.classList.add("open");
@@ -317,7 +317,7 @@ function getWinner() {
     track.volume = 0.5;
     isPlay = true;
   }
-  if (localStorage.getItem("O") == 10) {
+  if (localStorage.getItem("O") >= 10) {
     winnerButton.classList.add("open");
     winnerCongrats.classList.add("open");
     black.classList.add("open");
@@ -337,3 +337,9 @@ winnerButton.addEventListener("click", () => {
   track.pause();
   location.reload();
 });
+black.addEventListener("click", () => {
+  winnerButton.click();
+});
+console.log(
+  "Игра крестики-нолики, всё работает, продолжается до 10 побед одной из сторон, в Мозилле ещё и финальный трек играет, в Хроме, пока нет)))"
+);
