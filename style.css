@@ -34,6 +34,45 @@
   right: calc(50vw - 300px);
 }
 
+.winner-congrats {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: black solid 1px;
+  position: absolute;
+  top: 150px;
+  font-size: 40px;
+  text-align: center;
+  left: calc(50vw - 90px);
+  background-color: rgb(236, 240, 32);
+  z-index: 5;
+  display: none;
+}
+
+.winner-congrats__button {
+  position: absolute;
+  top: 310px;
+  left: calc(50vw - 15px);
+  background-color: orangered;
+  z-index: 5;
+  display: none;
+}
+
+.black {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  top: 0px;
+  opacity: 0.8;
+  z-index: 2;
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
 .space {
   height: calc(100vh - 500px);
 }

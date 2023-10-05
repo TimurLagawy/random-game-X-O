@@ -14,6 +14,14 @@ let countNo = 0;
 let resultsX = document.querySelector("#results-x");
 let resultsO = document.querySelector("#results-o");
 let resultsNo = document.querySelector("#results-no");
+let winnerCongrats = document.querySelector("#winner-congrats");
+let winnerButton = document.querySelector("#winner-congrats__button");
+let black = document.querySelector("#black");
+let track = document.querySelector("#audio");
+
+winnerButton.classList.remove("open");
+winnerCongrats.classList.remove("open");
+black.classList.remove("open");
 
 actualResult();
 
@@ -294,5 +302,38 @@ function checkOfWinner() {
     countNo = localStorage.getItem("No");
     localStorage.setItem("No", +countNo + 1);
     location.reload();
+    audio.play();
+    isPlay = true;
   }
 }
+
+function getWinner() {
+  if (localStorage.getItem("X") == 10) {
+    winnerButton.classList.add("open");
+    winnerCongrats.classList.add("open");
+    black.classList.add("open");
+    winnerCongrats.innerHTML = "X is a champion!";
+    track.play();
+    track.volume = 0.5;
+    isPlay = true;
+  }
+  if (localStorage.getItem("O") == 10) {
+    winnerButton.classList.add("open");
+    winnerCongrats.classList.add("open");
+    black.classList.add("open");
+    winnerCongrats.innerHTML = "O is a champion!";
+    track.play();
+    track.volume = 0.5;
+    //  isPlay = true;
+  }
+}
+
+getWinner();
+
+winnerButton.addEventListener("click", () => {
+  localStorage.setItem("X", 0);
+  localStorage.setItem("O", 0);
+  localStorage.setItem("No", 0);
+  track.pause();
+  location.reload();
+});
