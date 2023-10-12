@@ -109,3 +109,15 @@
     top: 400px;
   }
 }
+@media (max-width: 490px) {
+  .rules {
+    top: 470px;
+  }
+  .results {
+    right: calc(50vw - 55px);
+    top: 390px;
+  }
+  .space {
+    height: 170px;
+  }
+}
