@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js30#3.2 Game by Timur Lagawy</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/favicon/hamster.png" />
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" />
    
   </head>
   <body class="body">
     <main>
-      <h1 class="header">Take to hamster!</h1>
+      <h1 class="header">X & O</h1>
     <div class="wrapper-square">
       <div class="row">
         <div class="pole" id="pole1">
@@ -40,14 +40,19 @@
           <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">
         </div>
       </div>
+      <div class="row">
+        <div class="pole" id="pole7"></div>
+        <div class="pole" id="pole8"></div>
+        <div class="pole" id="pole9"></div>
+      </div>
     </div>
     <div class="results">
-    <span>Table of results</span>
-    <span>Score &nbsp; :   <span class="results-x" id="results-x">0</span></span>
-    <span>Stage &nbsp; :   <span class="results-o" id="results-o">1</span></span>
-    <span>Champions: <span class="results-no" id="results-no">0</span></span>
+    <span>Results:</span>
+    <span>winner &nbsp; X:   <span class="results-x" id="results-x">0</span></span>
+    <span>winner &nbsp; O:   <span class="results-o" id="results-o">0</span></span>
+    <span>No winner: <span class="results-no" id="results-no">0</span></span>
   </div>
-  <div class="rules">Rules: 'Click to hamster for take it!'.    
+  <div class="rules">Rules: "X" go first, then "O". The winner is the one who makes three vertically or horizontally or diagonally. The champion is the one who wins 10 times.    
   </div>
   <div class="hamster"></div>
     <div class="space"></div>
