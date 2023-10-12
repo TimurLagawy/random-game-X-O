@@ -4,9 +4,9 @@ let pole3 = document.querySelector("#pole3");
 let pole4 = document.querySelector("#pole4");
 let pole5 = document.querySelector("#pole5");
 let pole6 = document.querySelector("#pole6");
-let pole7 = document.querySelector("#pole7");
-let pole8 = document.querySelector("#pole8");
-let pole9 = document.querySelector("#pole9");
+
+
+
 let count = 0;
 let countX = 0;
 let countO = 0;
