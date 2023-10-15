@@ -1,3 +1,7 @@
+.body {
+  background: lightgreen;
+}
+
 .header {
   text-align: center;
 }
@@ -18,20 +22,62 @@
   left: calc(50vw - 300px);
 }
 
-.pole {
+.hamster {
+  position: absolute;
   height: 100px;
   width: 100px;
-  border: solid black 1px;
+  top: 170px;
+  left: calc(50vw - 300px);
+  background: url(assets/icon/hamster-norm.png) no-repeat;
+}
+
+.pole {
+  height: 120px;
+  width: 120px;
   cursor: pointer;
   text-align: center;
-  font-size: 70px;
+  overflow: hidden;
+}
+
+.p1 {
+  margin-top: -20px;
+}
+
+.pole-hamster {
+  height: 48px;
+  width: 48px;
+  margin-top: 50px;
+}
+
+.sack1,
+.sack2,
+.sack3,
+.sack4,
+.sack5,
+.sack6 {
+  position: absolute;
+  top: 128px;
+  margin-left: -15px;
+}
+
+.sack2 {
+  top: 108px;
+}
+
+.sack4,
+.sack6 {
+  top: 248px;
+}
+
+.sack5 {
+  top: 228px;
 }
 
 .results {
   position: absolute;
   display: grid;
   top: 80px;
-  right: calc(50vw - 300px);
+  right: calc(50vw - 320px);
 }
 
 .another-game {

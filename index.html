@@ -8,19 +8,37 @@
     <link rel="icon" href="assets/favicon/favicon-16x16.png" />
    
   </head>
-  <body>
+  <body class="body">
     <main>
       <h1 class="header">X & O</h1>
     <div class="wrapper-square">
       <div class="row">
-        <div class="pole" id="pole1"></div>
-        <div class="pole" id="pole2"></div>
-        <div class="pole" id="pole3"></div>
+        <div class="pole" id="pole1">
+          <img class="sack1" src="assets/icon/sack.png" alt="sack">     
+          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">               
+        </div>
+        <div class="pole  p1" id="pole2">
+          <img class="sack2" src="assets/icon/sack.png" alt="sack">
+          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">
+        </div>
+        <div class="pole" id="pole3">
+          <img class="sack3" src="assets/icon/sack.png" alt="sack">
+          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">
+        </div>
       </div>
       <div class="row">
-        <div class="pole" id="pole4"></div>
-        <div class="pole" id="pole5"></div>
-        <div class="pole" id="pole6"></div>
+        <div class="pole" id="pole4">
+          <img class="sack4" src="assets/icon/sack.png" alt="sack">
+          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">
+        </div>
+        <div class="pole p1" id="pole5">
+          <img class="sack5" src="assets/icon/sack.png" alt="sack">
+          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">
+        </div>
+        <div class="pole" id="pole6">
+          <img class="sack6" src="assets/icon/sack.png" alt="sack">
+          <img class="pole-hamster" src="assets/icon/litte-hamster.png" alt="little hamster">
+        </div>
       </div>
       <div class="row">
         <div class="pole" id="pole7"></div>
@@ -36,6 +54,7 @@
   </div>
   <div class="rules">Rules: "X" go first, then "O". The winner is the one who makes three vertically or horizontally or diagonally. The champion is the one who wins 10 times.    
   </div>
+  <div class="hamster"></div>
     <div class="space"></div>
     <div class="winner-congrats open" id="winner-congrats"></div>
     <button class="winner-congrats__button open" id="winner-congrats__button">Restart</button>
