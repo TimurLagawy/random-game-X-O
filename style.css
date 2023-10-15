@@ -34,6 +34,21 @@
   right: calc(50vw - 300px);
 }
 
+.another-game {
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  background: blue;
+  position: absolute;
+  top: 210px;
+  left: calc(50vw + 180px);
+}
+
+.another-game__btn {
+  color: white;
+  text-decoration: none;
+}
+
 .winner-congrats {
   width: 200px;
   height: 200px;
